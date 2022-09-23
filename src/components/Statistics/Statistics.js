@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 export default function Statistics({ title, stats }) {
-  console.log(stats);
   return (
     <section class="statistics">
       <h2 class="title">{title}</h2>
@@ -19,7 +18,7 @@ export default function Statistics({ title, stats }) {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stat: PropTypes.shape({
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,

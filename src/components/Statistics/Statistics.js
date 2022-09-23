@@ -20,7 +20,7 @@ export default function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
   title: PropTypes.string.isRequired,
-  stats: PropTypes.shape({
+  stat: PropTypes.shape({
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
   }),

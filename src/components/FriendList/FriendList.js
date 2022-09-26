@@ -4,7 +4,7 @@ import { FriendListBox } from './FriendList.styled';
 
 export default function FriendList({ friends }) {
   return (
-    <FriendListBox>
+    <FriendListBox className="friend-list">
       {friends.map(friend => (
         <FriendListItem
           key={friend.id}

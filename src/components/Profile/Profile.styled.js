@@ -9,11 +9,11 @@ export const Prolile = styled.div`
   margin-bottom: 50px;
   width: 300px;
 
-  background-color: #d3d3d3;
+  background-color: ${p => p.theme.colors.background};
 `;
 
 export const Description = styled.div`
-  background-color: #fff;
+  background-color: ${p => p.theme.colors.white};
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
@@ -30,17 +30,17 @@ export const Img = styled.img`
 `;
 
 export const UserName = styled.p`
-  font-weight: 700;
+  font-weight: ${p => p.theme.fontWeights.bolt};
   margin-bottom: 5px;
 `;
 
 export const Tag = styled.p`
-  font-weight: 400;
+  font-weight: ${p => p.theme.fontWeights.normal};
   margin-bottom: 5px;
 `;
 
 export const Location = styled.p`
-  font-weight: 400;
+  font-weight: ${p => p.theme.fontWeights.normal};
   margin-bottom: 5px;
 `;
 

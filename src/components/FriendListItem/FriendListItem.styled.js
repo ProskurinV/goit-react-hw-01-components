@@ -5,7 +5,7 @@ export const Item = styled.li`
   width: 100%;
   gap: 15px;
   align-items: center;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   box-shadow: 3px 3px 3px lightgrey;
   border-radius: 4px;
 `;
@@ -14,7 +14,7 @@ export const Status = styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-left: 90px;
 
   background-color: ${props => {
     return props.isOnline ? 'green' : 'red';

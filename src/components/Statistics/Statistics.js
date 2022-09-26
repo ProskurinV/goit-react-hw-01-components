@@ -3,14 +3,14 @@ import { StatisticsBox, Title, Stat, Item } from './Statistics.styled';
 
 export default function Statistics({ title, stats }) {
   return (
-    <StatisticsBox class="statistics">
-      <Title class="title">{title}</Title>
+    <StatisticsBox>
+      <Title>{title}</Title>
 
-      <Stat class="stat-list">
+      <Stat>
         {stats.map(stat => (
-          <Item key={stat.id} class="item">
-            <span class="label">{stat.label}</span>
-            <span class="percentage">{stat.percentage}%</span>
+          <Item key={stat.id}>
+            <span>{stat.label}</span>
+            <span>{stat.percentage}%</span>
           </Item>
         ))}
       </Stat>

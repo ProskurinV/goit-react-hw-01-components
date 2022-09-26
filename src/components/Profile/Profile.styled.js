@@ -7,10 +7,9 @@ export const Prolile = styled.div`
   margin-right: auto;
 
   margin-bottom: 50px;
+  width: 300px;
 
-  max-width: 300px;
-
-  background-color: lightgray;
+  background-color: #d3d3d3;
 `;
 
 export const Description = styled.div`

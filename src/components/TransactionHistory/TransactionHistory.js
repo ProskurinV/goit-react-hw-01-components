@@ -9,7 +9,7 @@ import {
 
 export default function TransactionHistory({ items }) {
   return (
-    <TrHistory class="transaction-history">
+    <TrHistory>
       <Header>
         <BgLine>
           <HeaderEl>Type</HeaderEl>

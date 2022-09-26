@@ -1,5 +1,15 @@
 import PropTypes from 'prop-types';
-// import { Card } from './User.styled';
+import {
+  Prolile,
+  Description,
+  Img,
+  UserName,
+  Tag,
+  Location,
+  Stats,
+  Label,
+  Text,
+} from './Profile.styled';
 
 export default function Profile({
   username,
@@ -11,29 +21,29 @@ export default function Profile({
   likes,
 }) {
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={avatar} alt="User avatar" class="avatar" />
-        <p class="name">{username}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
-      </div>
+    <Prolile class="profile">
+      <Description class="description">
+        <Img src={avatar} alt="User avatar" class="avatar" />
+        <UserName class="name">{username}</UserName>
+        <Tag class="tag">{tag}</Tag>
+        <Location class="location">{location}</Location>
+      </Description>
 
-      <ul class="stats">
-        <li>
+      <Stats class="stats">
+        <Label>
           <span class="label">Followers</span>
-          <span class="quantity">{followers}</span>
-        </li>
-        <li>
+          <Text class="quantity">{followers}</Text>
+        </Label>
+        <Label>
           <span class="label">Views</span>
-          <span class="quantity">{views}</span>
-        </li>
-        <li>
+          <Text class="quantity">{views}</Text>
+        </Label>
+        <Label>
           <span class="label">Likes</span>
-          <span class="quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
+          <Text class="quantity">{likes}</Text>
+        </Label>
+      </Stats>
+    </Prolile>
   );
 }
 

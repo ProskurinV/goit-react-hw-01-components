@@ -10,7 +10,7 @@ export const Prolile = styled.div`
 
   max-width: 300px;
 
-  background-color: gray;
+  background-color: lightgray;
 `;
 
 export const Description = styled.div`

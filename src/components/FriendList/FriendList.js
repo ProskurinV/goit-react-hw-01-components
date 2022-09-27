@@ -4,7 +4,7 @@ import { FriendListBox } from './FriendList.styled';
 
 export default function FriendList({ friends }) {
   return (
-    <FriendListBox >
+    <FriendListBox>
       {friends.map(friend => (
         <FriendListItem
           key={friend.id}
@@ -18,5 +18,9 @@ export default function FriendList({ friends }) {
 }
 
 FriendList.propTypes = {
-  friends: PropTypes.array.isRequired,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ),
 };

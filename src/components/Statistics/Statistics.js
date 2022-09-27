@@ -4,8 +4,7 @@ import { StatisticsBox, Title, Stat, Item } from './Statistics.styled';
 export default function Statistics({ title, stats }) {
   return (
     <StatisticsBox>
-      <Title>{title}</Title>
-
+      {title && <Title>{title}</Title>}
       <Stat>
         {stats.map(stat => (
           <Item key={stat.id}>
@@ -21,6 +20,7 @@ export default function Statistics({ title, stats }) {
 Statistics.propTypes = {
   title: PropTypes.string,
   stat: PropTypes.shape({
+    id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
   }),

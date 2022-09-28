@@ -11,8 +11,7 @@ export default function FriendListItem({ avatar, name, isOnline }) {
   );
 }
 
-FriendListItem.protoType = {
-  id: PropTypes.number.isRequired,
+FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.string.isRequired,
